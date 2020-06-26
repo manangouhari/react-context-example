@@ -1,3 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Menlo", sans-serif;
+}
+
+button {
+  font-size: 0.7rem;
+  cursor: pointer;
+}
 .App {
-  font-family: sans-serif;
+  padding: 1em;
+  height: 100vh;
+  font-size: 16px;
+  background: #eee;
+}
+
+.theme-btn {
+  color: #eee;
+  background: #333;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.add-item {
+  margin-top: 0.8rem;
+  display: flex;
+  width: 80%;
+}
+
+.add-item--input {
+  border-radius: 4px;
+  border: 2px solid #444;
+  background: #ccc;
+  color: #444;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.4rem;
+  font-size: 0.8rem;
+  flex-grow: 2;
+}
+
+.add-item--btn {
+  border: none;
+  color: #eee;
+  background: #333;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.total {
+  margin-top: 0.8rem;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.item-list {
+  margin-top: 0.8rem;
+}
+
+.item {
+  margin-top: 0.6rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ccc;
+  color: #333;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+  width: 80%;
+}
+
+.item--remove {
+  background: none;
+  border: none;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
 }
