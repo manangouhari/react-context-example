@@ -1,8 +1,9 @@
 import React, { useContext, useState } from "react";
 import { ItemContext } from "../context/ItemContext";
+import { ThemeContext } from "../context/ThemeContext";
 const AddItem = () => {
   const [items, setItems] = useContext(ItemContext);
-
+  const [theme] = useContext(ThemeContext);
   const [itemText, setItemText] = useState("");
   const handleSubmit = e => {
     e.preventDefault();
@@ -21,7 +22,7 @@ const AddItem = () => {
         }}
         className="add-item--input"
       />
-      <button className="add-item--btn">Add</button>
+      <button className={`add-item--btn ${theme}`}>Add</button>
     </form>
   );
 };
